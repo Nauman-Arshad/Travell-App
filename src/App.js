@@ -2,7 +2,7 @@
 function App() {
   return (
     <div className="App">
-     <h1>hello Nauman !,Happy Travelling</h1>
+     <h2 style={{textAlign:center}}>hello Nauman ! Happy Travelling</h2>
     </div>
   );
 }
