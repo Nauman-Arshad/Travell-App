@@ -11,8 +11,8 @@ const Header = ({ onPlaceChanged, onLoad }) => {
   return (
     <AppBar position="static" style={{backgroundColor:'#273c75'}}>
       <Toolbar className={classes.toolbar}>
-        <Typography variant="h5" className={classes.title}>
-          Travel Advisor
+        <Typography variant="h5" className={classes.title} style={{fontFamily:'monospace',color:'honeydew'}}>
+          Travel Advisor <sub style={{fontFamily:'initial', fontSize:'12px',color:'#34e7e4'}}>Nauman</sub>
         </Typography>
         <Box display="flex">
           <Typography variant="h6" className={classes.title} style={{fontFamily:'-moz-initial', fontSize:'18px'}} >

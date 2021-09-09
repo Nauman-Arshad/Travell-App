@@ -28,6 +28,7 @@ export default makeStyles((theme) => ({
   },
   toolbar: {
     display: 'flex', justifyContent: 'space-between',
+    minHeight:45
   },
 }));
 
