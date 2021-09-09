@@ -1,4 +1,4 @@
-export default [
+const mapStyle = [
   {
     featureType: 'all',
     elementType: 'all',
@@ -99,3 +99,5 @@ export default [
     ],
   },
 ];
+
+export default mapStyle;
