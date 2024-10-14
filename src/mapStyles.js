@@ -1,3 +1,12 @@
+//
+//
+// This JavaScript code defines a custom map style for Google Maps. It's an array of objects, where each object specifies styling rules for a particular feature type (e.g., roads, water, administrative areas) and element type (e.g., labels, all). The styling rules include properties like saturation, lightness, visibility, and weight.
+//
+// In essence, this code customizes the appearance of a Google Map by controlling the visual representation of various map features.
+//
+// **Source:** `src/mapStyles.js`
+
+
 const mapStyle = [
   {
     featureType: 'all',

@@ -1,3 +1,18 @@
+
+
+// This is a React functional component named `PlaceDetails`. It displays detailed information about a specific place, such as a restaurant or attraction, in a card layout.
+
+// The component expects three props:
+
+// * `place`: an object containing information about the place, such as its name, photo, rating, reviews, price level, ranking, awards, cuisine, address, and phone number.
+// * `selected`: a boolean indicating whether the place is currently selected.
+// * `refProp`: a reference to a DOM element that should be scrolled into view when the place is selected.
+
+// The component uses Material-UI components to render the place's information in a visually appealing way. It also uses conditional rendering to display or hide certain information based on the presence of data in the `place` object.
+
+// When the component is rendered, it will scroll the referenced DOM element into view if the `selected` prop is true.
+
+
 import React from 'react';
 import { Box, Typography, Button, Card, CardMedia, CardContent, CardActions, Chip } from '@material-ui/core';
 import LocationOnIcon from '@material-ui/icons/LocationOn';

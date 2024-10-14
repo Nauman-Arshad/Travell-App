@@ -1,4 +1,17 @@
-/* eslint-disable consistent-return */
+
+//
+// This JavaScript code defines two asynchronous functions, `getPlacesData` and `getWeatherData`, which use the Axios library to make GET requests to external APIs.
+//
+// * `getPlacesData` fetches a list of places (e.g., restaurants, attractions) within a specified boundary (defined by `sw` and `ne` coordinates) from the Travel Advisor API.
+// * `getWeatherData` retrieves weather data for a specific location (defined by `lat` and `lng` coordinates) from the Open Weather Map API.
+//
+//     Both functions return the API response data if successful, and log any errors to the console if the request fails.
+//
+//     These functions are likely used in a travel advisor application to fetch relevant data for display on a map or in a list.
+//
+//     This code is from the file `src/api/travelAdvisorAPI.js`.
+
+
 import axios from 'axios';
 
 export const getPlacesData = async (type, sw, ne) => {

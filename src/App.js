@@ -1,3 +1,21 @@
+
+// This is a React functional component named `App`. It appears to be the main entry point of a travel advisor application, displaying a map and a list of places (e.g., restaurants, attractions) with filtering options.
+
+// Here's a succinct breakdown:
+
+// * The component uses several state variables to store data, such as `type` (e.g., restaurants, attractions), `rating`, `coords` (current location), `bounds` (map boundaries), `weatherData`, `filteredPlaces`, and `places`.
+// * Three `useEffect` hooks are used to:
+// 	1. Get the current location using `navigator.geolocation`.
+// 	2. Filter places based on the `rating` state.
+// 	3. Fetch weather data and places data from APIs when the `bounds` state changes.
+// * The component renders a `Header` component, a `List` component, and a `Map` component.
+// * The `List` component displays a list of places with filtering options, and the `Map` component displays a map with markers for places and weather data.
+// * The component also defines two callback functions, `onLoad` and `onPlaceChanged`, which are passed to the `Header` component.
+
+// Overall, this component manages the application's state and renders the main UI components, which are responsible for displaying the map, list of places, and filtering options.
+
+
+
 import React, { useState, useEffect } from 'react';
 import { CssBaseline, Grid } from '@material-ui/core';
 

@@ -1,3 +1,17 @@
+
+
+// This is a React functional component named `Map`. It renders a Google Map with markers and weather data. Here's a succinct breakdown:
+
+// * The component receives several props: `coords`, `places`, `setCoords`, `setBounds`, `setChildClicked`, and `weatherData`.
+// * It uses the `useMediaQuery` hook to determine if the screen width is at least 600px.
+// * It renders a `GoogleMapReact` component with a custom map style (`mapStyles`) and several markers:
+// 	+ Markers for `places` are displayed with a `LocationOnOutlinedIcon` on small screens and a `Paper` component with the place's name, photo, and rating on larger screens.
+// 	+ Markers for `weatherData` are displayed with a weather icon.
+// * The component updates the `coords` and `bounds` state when the map is changed, and sets the `childClicked` state when a marker is clicked.
+
+// Overall, this component is likely used in a travel advisor application to display a map with relevant locations and weather information.
+
+
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import { Paper, Typography, useMediaQuery } from '@material-ui/core';

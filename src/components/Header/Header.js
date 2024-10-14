@@ -1,3 +1,9 @@
+// This is a React functional component named Header. It renders a static app bar with a title, a search bar, and a search icon.
+//  The search bar is an autocomplete input field that uses the Google Maps API to suggest places as the user types.
+//  The component expects two props: onPlaceChanged and onLoad,
+// which are likely callback functions that handle the user's search input and the loading of search results, respectively.
+// The component's styles are imported from a separate file styles.js.
+
 import React from 'react';
 import { Autocomplete } from '@react-google-maps/api';
 import { AppBar, Toolbar, Typography, InputBase, Box } from '@material-ui/core';
