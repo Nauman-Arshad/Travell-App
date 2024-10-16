@@ -54,15 +54,24 @@ const App = () => {
   useEffect(() => {
     if (bounds) {
       setIsLoading(true);
-
+  
       getWeatherData(coords.lat, coords.lng)
         .then((data) => setWeatherData(data));
-
+  
       getPlacesData(type, bounds.sw, bounds.ne)
         .then((data) => {
-          setPlaces(data.filter((place) => place.name && place.num_reviews > 0));
+          if (data && Array.isArray(data)) {
+            setPlaces(data.filter((place) => place.name && place.num_reviews > 0));
+          } else {
+            console.error('Invalid data format:', data);
+            setPlaces([]);
+          }
           setFilteredPlaces([]);
           setRating('');
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error fetching places data:", error);
           setIsLoading(false);
         });
     }
