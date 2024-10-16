@@ -1,7 +1,5 @@
 // This is a React functional component named List. It appears to be a part of a travel advisor application, displaying a list of places (e.g., restaurants, attractions) with filtering options.
-
-// Here's a succinct breakdown:
-
+// Here's a succinct breakdown
 // The component receives several props: places, type, setType, rating, setRating, childClicked, and isLoading.
 // It uses the useState hook to create a state variable elRefs to store references to DOM elements.
 // The useEffect hook is used to update elRefs when the places prop changes.

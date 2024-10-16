@@ -17,4 +17,4 @@ Build and Deploy an advanced Travel Companion Application using Google Maps. Wit
 
 ## Start projects
 
-Setup: run ```npm i && npm start``` to start the development server
+Setup: run ```npm i && npm start``` to start the development server.
